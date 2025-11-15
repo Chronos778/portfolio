@@ -69,43 +69,48 @@ export default function Home() {
             </div>
           )}
 
-          {/* Tech Stack Display */}
+          {/* Featured Projects */}
           {showContent && (
             <div className="bg-terminal-darker border-2 border-terminal p-4 md:p-6 mb-6 md:mb-8 animate-slide-up" style={{animationDelay: '0.4s'}}>
-            <div className="text-xs md:text-sm mb-4 text-terminal-accent">$ ls -la ~/tech-stack/</div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 text-xs md:text-sm">
-              <div>
-                <div className="text-terminal-accent mb-2">▸ LANGUAGES/</div>
-                <div className="pl-4 text-terminal-secondary space-y-1">
-                  <div>├─ Java</div>
-                  <div>├─ Python</div>
-                  <div>├─ C/C++</div>
-                  <div>└─ JavaScript</div>
+            <div className="text-xs md:text-sm mb-4 text-terminal-accent">$ cat ~/projects/featured.txt</div>
+            <div className="space-y-4 text-xs md:text-sm">
+              <div className="border-l-2 border-terminal-accent pl-3 md:pl-4 hover:bg-terminal-lighter transition-all">
+                <div className="text-terminal-accent font-bold mb-1">1. LifeTrack</div>
+                <div className="text-terminal-secondary mb-1">AI-powered health record management system</div>
+                <div className="text-terminal-secondary opacity-60 text-[10px] md:text-xs">
+                  Tech: React Native, Flask, TensorFlow
                 </div>
               </div>
-              <div>
-                <div className="text-terminal-accent mb-2">▸ FRAMEWORKS/</div>
-                <div className="pl-4 text-terminal-secondary space-y-1">
-                  <div>├─ React</div>
-                  <div>├─ React Native</div>
-                  <div>├─ Flask</div>
-                  <div>└─ Express.js</div>
+              
+              <div className="border-l-2 border-terminal-accent pl-3 md:pl-4 hover:bg-terminal-lighter transition-all">
+                <div className="text-terminal-accent font-bold mb-1">2. Data Visualization Playground</div>
+                <div className="text-terminal-secondary mb-1">Interactive charts and analytics platform</div>
+                <div className="text-terminal-secondary opacity-60 text-[10px] md:text-xs">
+                  Tech: React, D3.js, Python, Pandas
                 </div>
               </div>
-              <div>
-                <div className="text-terminal-accent mb-2">▸ AI_ML/</div>
-                <div className="pl-4 text-terminal-secondary space-y-1">
-                  <div>├─ TensorFlow</div>
-                  <div>├─ Pandas</div>
-                  <div>└─ Data Science</div>
+              
+              <div className="border-l-2 border-terminal-accent pl-3 md:pl-4 hover:bg-terminal-lighter transition-all">
+                <div className="text-terminal-accent font-bold mb-1">3. EcoGuard ML</div>
+                <div className="text-terminal-secondary mb-1">Wildlife monitoring with machine learning</div>
+                <div className="text-terminal-secondary opacity-60 text-[10px] md:text-xs">
+                  Tech: Python, TensorFlow, OpenCV
                 </div>
               </div>
-              <div>
-                <div className="text-terminal-accent mb-2">▸ TOOLS/</div>
-                <div className="pl-4 text-terminal-secondary space-y-1">
-                  <div>├─ Git</div>
-                  <div>├─ VS Code</div>
-                  <div>└─ Linux (Arch)</div>
+              
+              <div className="border-l-2 border-terminal-accent pl-3 md:pl-4 hover:bg-terminal-lighter transition-all">
+                <div className="text-terminal-accent font-bold mb-1">4. CurioCity</div>
+                <div className="text-terminal-secondary mb-1">Location-based discovery mobile app</div>
+                <div className="text-terminal-secondary opacity-60 text-[10px] md:text-xs">
+                  Tech: React Native, Express.js, MongoDB
+                </div>
+              </div>
+              
+              <div className="border-l-2 border-terminal-accent pl-3 md:pl-4 hover:bg-terminal-lighter transition-all">
+                <div className="text-terminal-accent font-bold mb-1">5. Quotes API</div>
+                <div className="text-terminal-secondary mb-1">REST API with 5000+ curated quotes</div>
+                <div className="text-terminal-secondary opacity-60 text-[10px] md:text-xs">
+                  Tech: Node.js, Express, PostgreSQL
                 </div>
               </div>
             </div>
