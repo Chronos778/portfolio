@@ -104,10 +104,9 @@ Borders: #30363d (Slate Gray)
 ### Navigation Commands
 - `help` - Display all available commands
 - `ls` - List all pages and files with descriptions
-- `cd <page>` - Navigate to a page (projects, skills, about, contact)
+- `cd <page>` - Navigate to a page (projects, about, contact)
 - `pwd` - Print current working directory
 - `about` - Navigate directly to about page
-- `skills` - Navigate directly to skills page
 - `projects` - Navigate directly to projects page
 - `contact` - Navigate directly to contact page
 
@@ -115,7 +114,6 @@ Borders: #30363d (Slate Gray)
 - `cat <file>` - View file contents
   - `cat readme.md` - Portfolio overview
   - `cat about.txt` - Quick bio
-  - `cat skills.txt` - Skills summary
   - `cat projects.txt` - Projects list
   - `cat contact.txt` - Contact details
 
@@ -246,8 +244,6 @@ src/
 │   ├── page.tsx           # Home page with interactive terminal
 │   ├── projects/          # Projects showcase
 │   │   └── page.tsx
-│   ├── skills/            # Skills and technologies
-│   │   └── page.tsx
 │   ├── about/             # About me
 │   │   └── page.tsx
 │   ├── contact/           # Contact information
@@ -282,7 +278,7 @@ src/
 4. Use `theme matrix` to switch to Matrix green theme
 
 **Using the Sidebar:**
-- Click on navigation links (home, projects, skills, about, contact)
+- Click on navigation links (home, projects, about, contact)
 - On mobile, tap the hamburger menu (☰) in the top-left corner
 
 ### Playing Games
