@@ -26,9 +26,8 @@ export function useTerminal(options?: UseTerminalOptions) {
   // File system simulation
   const [currentDir, setCurrentDir] = useState('~');
   const [fileSystem, setFileSystem] = useState<Record<string, string[]>>({
-    '~': ['projects', 'skills', 'about', 'contact', 'playground', 'README.md', 'resume.pdf'],
+    '~': ['projects', 'about', 'contact', 'playground', 'README.md', 'resume.pdf'],
     '~/projects': ['LifeTrack.md', 'DataViz.md', 'EcoGuard.md', 'CurioCity.md', 'QuotesAPI.md'],
-    '~/skills': ['languages.txt', 'frameworks.txt', 'tools.txt'],
     '~/about': ['bio.txt', 'education.txt'],
     '~/contact': ['email.txt', 'phone.txt', 'social.txt'],
   });
@@ -44,11 +43,10 @@ export function useTerminal(options?: UseTerminalOptions) {
       'Available commands:',
       '  help       - Show this help message',
       '  ls         - List files and directories',
-      '  cd <dir>   - Navigate to page (projects, skills, about, contact)',
-      '  cat <file> - View file contents (readme.md, skills.txt, etc.)',
+      '  cd <dir>   - Navigate to page (projects, about, contact)',
+      '  cat <file> - View file contents (readme.md, about.txt, etc.)',
       '  pwd        - Print working directory',
       '  about      - Navigate to about page',
-      '  skills     - Navigate to skills page',
       '  projects   - Navigate to projects page',
       '  contact    - Navigate to contact page',
       '  theme <t>  - Change theme (matrix, amber, cyberpunk, nextjs)',
@@ -66,10 +64,6 @@ export function useTerminal(options?: UseTerminalOptions) {
       router.push('/about');
       return 'Navigating to /about...';
     },
-    skills: () => {
-      router.push('/skills');
-      return 'Navigating to /skills...';
-    },
     projects: () => {
       router.push('/projects');
       return 'Navigating to /projects...';
@@ -81,13 +75,11 @@ export function useTerminal(options?: UseTerminalOptions) {
     ls: () => {
       return [
         'drwxr-xr-x  projects/     → View my projects (cd projects)',
-        'drwxr-xr-x  skills/       → Technical skills (cd skills)',
         'drwxr-xr-x  about/        → About me (cd about)',
         'drwxr-xr-x  contact/      → Contact info (cd contact)',
         'drwxr-xr-x  playground/   → Experimental work',
         '-rw-r--r--  README.md     → Portfolio overview (cat readme.md)',
         '-rw-r--r--  about.txt     → Quick bio (cat about.txt)',
-        '-rw-r--r--  skills.txt    → Skills list (cat skills.txt)',
         '-rw-r--r--  projects.txt  → Projects list (cat projects.txt)',
         '-rw-r--r--  contact.txt   → Contact details (cat contact.txt)',
       ];
@@ -372,7 +364,6 @@ export function useTerminal(options?: UseTerminalOptions) {
         'home': '/',
         '~': '/',
         'projects': '/projects',
-        'skills': '/skills',
         'about': '/about',
         'contact': '/contact',
         'playground': '/playground',
@@ -407,10 +398,10 @@ export function useTerminal(options?: UseTerminalOptions) {
           '# Maithil Hrushikesh Patil',
           'Computer Science Student | AI/ML Developer',
           '',
-          'Welcome to my portfolio! Explore my projects, skills, and background.',
+          'Welcome to my portfolio! Explore my projects and background.',
           'Use the navigation menu or type commands to learn more.',
           '',
-          'Commands: about, skills, projects, contact',
+          'Commands: about, projects, contact',
         ],
         'about.txt': [
           'Name: Maithil Hrushikesh Patil',
@@ -419,16 +410,6 @@ export function useTerminal(options?: UseTerminalOptions) {
           'Focus: Data Science, AI/ML Development',
           '',
           'Type "cd about" or "about" to learn more.',
-        ],
-        'skills.txt': [
-          'TECHNICAL SKILLS:',
-          '================',
-          'Languages: Java, Python, C/C++, JavaScript',
-          'Frameworks: React, React Native, Flask, Express.js',
-          'AI/ML: TensorFlow, Pandas, Data Science',
-          'Tools: Git, VS Code, Linux (Arch)',
-          '',
-          'Type "cd skills" or "skills" to view details.',
         ],
         'projects.txt': [
           'MY PROJECTS:',

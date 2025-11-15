@@ -13,7 +13,6 @@ export default function Navigation() {
   const links = [
     { label: 'home', href: '/', icon: '~' },
     { label: 'projects', href: '/projects', icon: 'λ' },
-    { label: 'skills', href: '/skills', icon: '◆' },
     { label: 'about', href: '/about', icon: '→' },
     { label: 'contact', href: '/contact', icon: '@' },
   ];
