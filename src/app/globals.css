@@ -11,6 +11,12 @@
   --terminal-success: #3fb950;
 }
 
+/* Dynamic theme colors - updated by ThemeContext */
+body {
+  background-color: var(--terminal-bg) !important;
+  color: var(--terminal-fg) !important;
+}
+
 @theme inline {
   --color-background: var(--terminal-bg);
   --color-foreground: var(--terminal-fg);
@@ -133,27 +139,64 @@ html, body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #000000;
+  background: var(--terminal-bg);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #333333;
+  background: var(--terminal-border);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #666666;
+  background: var(--terminal-secondary);
 }
 
 /* Selection Styling */
 ::selection {
   background-color: rgba(255, 94, 94, 0.3);
-  color: #ff5e5e;
+  color: var(--terminal-accent);
 }
 
 /* Smooth transitions */
 * {
   @apply transition-colors duration-200;
+}
+
+/* Theme-aware utility classes */
+.bg-terminal {
+  background-color: var(--terminal-bg) !important;
+}
+
+.text-terminal {
+  color: var(--terminal-fg) !important;
+}
+
+.text-terminal-secondary {
+  color: var(--terminal-secondary) !important;
+}
+
+.text-terminal-accent {
+  color: var(--terminal-accent) !important;
+}
+
+.border-terminal {
+  border-color: var(--terminal-border) !important;
+}
+
+.bg-terminal-darker {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.bg-terminal-lighter {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.hover\:bg-terminal-lighter:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.hover\:text-terminal-accent:hover {
+  color: var(--terminal-accent) !important;
 }
 
 /* Monospace font for terminal-like elements */

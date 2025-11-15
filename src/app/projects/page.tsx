@@ -43,11 +43,11 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className="flex h-screen bg-black text-[#ededed] font-mono">
+    <div className="flex flex-col md:flex-row h-screen bg-black text-[#ededed] font-mono">
       <Navigation />
       
-      <main className="flex-1 overflow-auto p-8">
-        <div className="max-w-4xl">
+      <main className="flex-1 overflow-auto p-4 md:p-8 pt-16 md:pt-8">
+        <div className="max-w-4xl mx-auto">
           {/* Command Header */}
           <div className="mb-6">
             <div className="text-sm mb-2 text-[#ff5e5e]">$ ls -la ~/projects</div>
