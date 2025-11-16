@@ -2,6 +2,8 @@
 
 A modern terminal-themed developer portfolio built with Next.js, featuring an interactive terminal interface with dynamic theme switching, games, and full navigation capabilities.
 
+Live Link - https://portfolio-mu-nine-5cnvai28mj.vercel.app/
+
 ## About
 
 Personal portfolio website showcasing my projects, skills, and experience as a Computer Science student specializing in Data Science and AI/ML. The site features a unique terminal interface design with multiple color themes, interactive games, and a fully functional command-line experience.
