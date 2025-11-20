@@ -33,7 +33,7 @@ const projects = [
   },
   {
     name: 'Quotes API',
-    description: 'REST API serving 5000+ inspirational quotes with SVG image generation and protected endpoints',
+    description: 'REST API serving 10,000+ inspirational quotes with SVG image generation and protected endpoints',
     tech: ['Node.js', 'Express.js', 'Vercel'],
     github: 'https://github.com/Chronos778/quotes_api',
     live: 'https://quotes-api-ruddy.vercel.app',

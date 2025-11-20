@@ -108,7 +108,7 @@ export default function Home() {
               
               <div className="border-l-2 border-terminal-accent pl-3 md:pl-4 hover:bg-terminal-lighter transition-all">
                 <div className="text-terminal-accent font-bold mb-1">5. Quotes API</div>
-                <div className="text-terminal-secondary mb-1">REST API with 5000+ curated quotes</div>
+                <div className="text-terminal-secondary mb-1">REST API with 10,000+ curated quotes</div>
                 <div className="text-terminal-secondary opacity-60 text-[10px] md:text-xs">
                   Tech: Node.js, Express, PostgreSQL
                 </div>

@@ -418,7 +418,7 @@ export function useTerminal(options?: UseTerminalOptions) {
           '2. Data Visualization - Interactive charts & analytics',
           '3. EcoGuard ML - Wildlife monitoring with ML',
           '4. CurioCity - Location-based discovery app',
-          '5. Quotes API - REST API with 5000+ quotes',
+          '5. Quotes API - REST API with 10,000+ quotes',
           '',
           'Type "cd projects" or "projects" to explore.',
         ],

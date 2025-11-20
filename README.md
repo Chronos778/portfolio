@@ -148,7 +148,7 @@ Borders: #30363d (Slate Gray)
 2. Advanced Data Visualization Playground - Interactive data viz platform
 3. EcoGuard ML - Ecological monitoring with machine learning
 4. CurioCity - Location discovery mobile app
-5. Quotes API - REST API with 5000+ quotes
+5. Quotes API - REST API with 10,000+ quotes
 
 ## Getting Started
 
