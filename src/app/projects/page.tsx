@@ -43,40 +43,40 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className="flex flex-col md:flex-row h-screen bg-black text-[#ededed] font-mono">
+    <div className="flex flex-col md:flex-row h-screen bg-terminal text-terminal font-mono">
       <Navigation />
       
       <main className="flex-1 overflow-auto p-4 md:p-8 pt-16 md:pt-8">
         <div className="max-w-4xl mx-auto">
           {/* Command Header */}
           <div className="mb-6">
-            <div className="text-sm mb-2 text-[#ff5e5e]">$ ls -la ~/projects</div>
-            <div className="text-[#999999]">total {projects.length} repositories</div>
+            <div className="text-sm mb-2 text-terminal-accent">$ ls -la ~/projects</div>
+            <div className="text-terminal-secondary">total {projects.length} repositories</div>
           </div>
 
           {/* Projects List */}
           <div className="space-y-4">
             {projects.map((project, idx) => (
-              <div key={idx} className="bg-[#0a0a0a] border-2 border-[#333333] p-6 hover:border-[#ff5e5e] transition-colors">
+              <div key={idx} className="bg-terminal-darker border-2 border-terminal p-6 hover:border-terminal-accent transition-colors">
                 {/* Project Name */}
                 <div className="text-xl font-bold mb-2 flex items-center justify-between">
                   <div>
-                    <span className="text-[#ff5e5e]">▸</span> {project.name}
+                    <span className="text-terminal-accent">▸</span> {project.name}
                   </div>
                   {project.stars && (
-                    <span className="text-sm text-[#999999]">{project.stars}</span>
+                    <span className="text-sm text-terminal-secondary">{project.stars}</span>
                   )}
                 </div>
 
                 {/* Description */}
-                <div className="text-[#999999] mb-4 pl-4">
+                <div className="text-terminal-secondary mb-4 pl-4">
                   {project.description}
                 </div>
 
                 {/* Tech Stack */}
                 <div className="pl-4 mb-3 text-sm">
-                  <span className="text-[#666666]">Tech:</span>{' '}
-                  <span className="text-[#999999]">{project.tech.join(' • ')}</span>
+                  <span className="text-terminal-secondary opacity-60">Tech:</span>{' '}
+                  <span className="text-terminal-secondary">{project.tech.join(' • ')}</span>
                 </div>
 
                 {/* Links */}
@@ -85,7 +85,7 @@ export default function Projects() {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#ff5e5e] hover:underline flex items-center gap-2"
+                    className="text-terminal-accent hover:underline flex items-center gap-2"
                   >
                     → GitHub
                   </a>
@@ -94,7 +94,7 @@ export default function Projects() {
                       href={project.live}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#ff5e5e] hover:underline flex items-center gap-2"
+                      className="text-terminal-accent hover:underline flex items-center gap-2"
                     >
                       → Live Demo
                     </a>
