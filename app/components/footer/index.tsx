@@ -115,9 +115,7 @@ const Footer = () => {
         font="./Vercetti-Regular.woff"
         fontSize={isMobile ? 0.08 : 0.12}
         color="gray"
-        onClick={() => window.open('https://mohitvirli.github.io', '_blank')}
-        onPointerOver={() => { document.body.style.cursor = 'pointer'; }}
-        onPointerOut={() => { document.body.style.cursor = 'auto'; }}
+        raycast={() => null}
       >
         Original 3D Design by Mohit Virli
       </Text>
