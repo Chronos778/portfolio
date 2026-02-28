@@ -20,6 +20,12 @@ export const FOOTER_LINKS: FooterLink[] = [
     url: 'https://instagram.com/_notmp_81',
   },
   {
+    name: 'Spotify',
+    hoverText: 'Listen with me',
+    icon: 'icons/spotify.svg',
+    url: 'https://open.spotify.com/user/0gg4st4k5208ie9e22fsz94si?si=261c066abb064235',
+  },
+  {
     name: 'Resume',
     hoverText: 'Download',
     icon: 'icons/file.svg',
