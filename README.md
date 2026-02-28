@@ -88,12 +88,6 @@ npm run build
 npm start
 ```
 
-## Deployment
-
-### Deploy to Vercel (Recommended)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Chronos778/Portfolio)
-
 ## License
 
 MIT License
