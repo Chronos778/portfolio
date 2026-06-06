@@ -1,4 +1,4 @@
-# Maithil Patil - 3D Interactive Portfolio
+# 3D Interactive Portfolio
 
 A premium, immersive 3D developer portfolio built with Next.js, React Three Fiber, and GSAP.
 
@@ -19,20 +19,20 @@ Personal portfolio website showcasing my projects, skills, and experience as a C
 
 ## Features
 
-### 🎨 Immersive 3D Experience
+###  Immersive 3D Experience
 
 - **Interactive Environment** - Navigate a 3D space instead of scrolling a 2D page.
 - **Dynamic Camera Work** - GSAP-powered smooth camera panning and zooming between portfolio sections.
 - **Custom 3D Models** - Includes imported glTF/GLB models to enhance the visual storytelling.
 - **3D Typography** - Custom rendered 3D text (Soria and Vercetti fonts) integrated directly into the WebGL scene.
 
-### � Showcased Sections
+###  Showcased Sections
 
 - **Hero** - A rotating 3D text tunnel displaying my core professional identities (Data Scientist, AI/ML Developer, Tech Optimist, Problem Solver, Innovator, Lifelong Learner).
 - **Timeline** - A stylized 3D timeline tracing my educational and hackathon journey starting from B.Tech CSE (Data Science) graduation in 2024.
 - **Interactive Projects Grid** - A beautiful sweeping 3D arc carousel displaying 11 of my GitHub repositories, including LifeTrack, Data Viz Playground, EcoGuard ML, and an array of Web/Software projects.
 
-### 📱 Responsive Design
+###  Responsive Design
 
 - **Mobile-First 3D** - The WebGL canvas dynamically recalculates field-of-view and camera positions to ensure the 3D scene looks just as good on mobile devices as it does on desktop.
 - **Touch-Friendly Controls** - Custom `TouchPanControls` implemented for intuitive mobile navigation around the 3D space.
@@ -101,4 +101,4 @@ MIT License
 ---
 
 Original 3D Design Structure by Mohit Virli.
-Re-engineered and personalized by Maithil Hrushikesh Patil.
+Re-engineered and personalized by Me.
